@@ -11,7 +11,7 @@ let cont ='';
 items.forEach(item=>{
     cont += `<div class="col-sm col-md-6 col-lg-4 ftco-an">
     <div class="product">
-        <a href="product-single.html" class="img-prod"><img class="img-fluid col-lg-12" src='../product_images/${item.image1}' alt="Colorlib Template"></a>
+        <a href='product-single.html?id=${item.id}' class="img-prod"><img class="img-fluid col-lg-12" src='../product_images/${item.image1}' alt="Colorlib Template"></a>
         <div class="text py-3 px-3">
             <h3><a href="#"></a></h3>
             <div class="d-flex">
@@ -46,3 +46,4 @@ items.forEach(item=>{
 })
 
 document.getElementById('list').innerHTML= cont;
+
